@@ -8,8 +8,8 @@ export async function POST(req) {
      const responce=await req.json();
   try {
     const data = await resend.emails.send({
-      from: 'tubeguruji@resend.dev',
-      to: ['accounts@tubeguruji.com'],
+      from: 'onboarding@resend.dev',
+      to: 'dev.davirv01@gmail.com',
       subject: responce?.userName+" share file with You",
       react: EmailTemplate({ responce }),
     });
